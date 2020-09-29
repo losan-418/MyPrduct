@@ -1,0 +1,11 @@
+{% extends 'common.html' %}
+{% block losan %}
+    {% include 'user_menu.html' %}
+    <table align="center" border="1">
+    <tr><th class="admin_info"> Name : {{ rec.name }}</th></tr>
+    <tr><th class="admin_info"> Contact No : {{ rec.contact }} </th></tr>
+    <tr><th class="admin_info"> Email Id : {{ rec.email }}</th></tr>
+    <tr><th class="admin_info"> Date of Joining : {{ rec.jdate }}</th></tr>
+    </table>
+
+{% endblock %}

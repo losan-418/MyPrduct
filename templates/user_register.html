@@ -1,0 +1,16 @@
+{% extends 'common.html' %}
+{% block losan %}
+    {% include 'main_menu.html' %}
+    <form action="{% url 'save_user' %}" method="post">
+    {% csrf_token %}
+    <table align="center" border="1">
+        <tr><th id="user_title">New User Registration</th></tr>
+        <tr><th class="user_info"><input type="text" placeholder="Name" required name="u1"></th></tr>
+        <tr><th class="user_info"><input type="number" placeholder="Contact Number" required name="u2"></th></tr>
+        <tr><th class="user_info"><input type="email" placeholder="E-Mail Id" required name="u3"></th></tr>
+        <tr><th class="user_info">Password<input type="password" placeholder="Password" name="u4" required></th></tr>
+        <tr><th class="user_info">Joining date<label><script>document.write(new Date().toLocaleDateString());</script></label></th></tr>
+        <tr><th class="user_info"><button type="submit">Save</button> </th></tr>
+    </table>
+    </form>
+{% endblock %}

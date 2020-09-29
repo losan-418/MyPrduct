@@ -1,0 +1,10 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'c1.css' %}">
+<table align="center" border="2">
+    <tr>
+        <th class="mm"> <a href="{% url 'admin_home' %}">Home</a> </th>
+        <th class="mm"> <a href="{% url 'user_data' %}">Users</a> </th>
+        <th class="mm"> <a href="{% url 'admin_products' %}">Product</a> </th>
+        <th class="mm"> <a href="{% url 'index' %}">Logout</a> </th>
+    </tr>
+</table>

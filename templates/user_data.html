@@ -1,0 +1,40 @@
+{% extends 'common.html' %}
+{% block losan %}
+    {% include 'admin_menu.html' %}
+    <table align="center" border="2">
+    <tr>
+        <th class="user__info_title">User No</th>
+        <th class="user__info_title">Name</th>
+        <th class="user__info_title">Contact No</th>
+        <th class="user__info_title">E-mail id</th>
+        <th class="user__info_title">Joining Date</th>
+        <th class="user__info_title">Status</th>
+        <th class="user__info_title" colspan="2">Admin Approval</th>
+    </tr>
+    {% for x in newdata %}
+         <tr>
+            <th class="user__info_details">{{ x.no }}</th>
+            <th class="user__info_details">{{ x.name }}</th>
+            <th class="user__info_details">{{ x.contact }}</th>
+            <th class="user__info_details">{{ x.email }}</th>
+            <th class="user__info_details">{{ x.jdate }}</th>
+            <th class="user__info_details">{{ x.status }}</th>
+            <th class="user_info_details"><a href="{% url 'update' %}?no={{ x.no }}">Approv</a></th>
+         <th class="user_info_details"><a href="{% url 'delete' %}?no={{ x.no }}">Delete</a></th>
+         </tr>
+    {% endfor %}
+    {% for x in olddata %}
+         <tr>
+            <th class="user__info_details">{{ x.no }}</th>
+            <th class="user__info_details">{{ x.name }}</th>
+            <th class="user__info_details">{{ x.contact }}</th>
+            <th class="user__info_details">{{ x.email }}</th>
+            <th class="user__info_details">{{ x.jdate }}</th>
+            <th class="user__info_details">{{ x.status }}</th>
+         <th class="user_info_details"><a href="{% url 'delete' %}?no={{ x.no }}">Delete</a></th>
+         </tr>
+    {% endfor %}
+
+    </table>
+
+{% endblock %}

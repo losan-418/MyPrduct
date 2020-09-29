@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+<head>
+
+    <title>The LKS Mart</title>
+    <link rel="stylesheet" href="{% static 'c1.css' %}">
+</head>
+<body>
+<table align="center" border="1">
+    <tr>
+        <th>
+            <img id="icon" src="{% static 'images/icon1.png' %} ">
+        </th>
+        <th>
+            <h1 id="title">The LKS Mart</h1>
+        </th>
+    </tr>
+    <tr >
+        <th colspan="2">
+            {% block losan %}
+
+            {% endblock %}
+        </th>
+    </tr>
+    <tr>
+        <th colspan="2" id="copyright">
+                    Copyright @ The LKS Mart
+        </th>
+    </tr>
+
+</table>
+</body>
+</html>

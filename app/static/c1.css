@@ -1,0 +1,144 @@
+.mm
+    {
+        text-align: center;
+        font-family: 'Agency FB';
+        font-size: 30px;
+        width: 150px;
+        color: maroon;
+        background-color: wheat;
+
+    }
+.p_info
+    {
+        text-align: right;
+
+        background-color: wheat;
+        color: maroon;
+        font-family: "Agency FB";
+        font-size: 20px;
+
+    }
+    .p_data
+    {
+
+        text-align: left;
+        color: wheat;
+        font-family: "Agency FB";
+        font-size: 20px;
+
+    }
+    .img-circle {
+        border-radius: 50%;
+    }
+            body{
+                background-color: maroon;
+            }
+            #title
+            {
+                font-family: "Agency FB";
+                font-size: 60px;
+                padding: 5px;
+                color: wheat;
+                 text-align: center;
+            }
+            #icon
+            {
+                width: 50px;
+                height: 50px;
+
+            }
+            #copyright
+            {
+                background-color: wheat;
+                color: maroon;
+                font-family: Arial;
+                font-size: 15px;
+                text-align: center;
+            }
+            #admin_title
+        {
+            background-color: wheat ;
+            color: maroon;
+            padding: 15px;
+            font-size: 30px;
+            font-family: "Agency FB";
+            width: 300px;
+        }
+        .admin_error
+        {
+            padding: 10px;
+            background-color: yellow;
+            color: orangered;
+            font-family: "Arial Black";
+            font-size: 20px;
+        }
+    .admin_field
+    {
+        padding: 10px;
+    }
+    .admin_info
+    {
+        font-family: "Agency FB";
+        font-size: 20px;
+        color: wheat;
+        width: 350px;
+    }
+    .product_info
+     {
+         padding: 10px;
+         color: wheat;
+     }
+    #product_title
+    {
+        padding: 15px;
+        font-size: 30px;
+        font-family: "Agency FB";
+        color: maroon;
+        background-color: wheat;
+    }
+    .product__info_title
+    {
+       padding: 10px;
+        width: 100px;
+        background-color: wheat;
+        color: maroon;
+        font-family: "Arial Black";
+        font-size: 20px;
+    }
+    .product__info_details
+    {
+        color: wheat;
+        font-family: "Agency FB";
+    }
+    #product_img {
+
+    }
+    .user_info
+    {
+       padding: 10px;
+         color: wheat;
+    }
+    #user_title
+    {
+        padding: 15px;
+        font-size: 30px;
+        font-family: "Agency FB";
+        color: maroon;
+        background-color: wheat;
+    }
+    .user__info_details
+    {
+        color: wheat;
+        font-family: "Agency FB";
+        padding:15px;
+        font-size: 20px;
+    }
+    .user__info_title
+    {
+       padding: 10px;
+        width: 100px;
+        background-color: wheat;
+        color: maroon;
+        font-family: "Arial Black";
+        font-size: 20px;
+    }

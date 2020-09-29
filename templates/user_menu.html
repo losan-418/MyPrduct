@@ -1,0 +1,11 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'c1.css' %}">
+<table align="center" border="1">
+    <tr>
+        <th class="mm"><a href="{% url 'user_home' %}">Home</a></th>
+        <th class="mm"><a href="{% url 'user_detail' %}">User Details</a></th>
+        <th class="mm"><a href="">Cart Items</a></th>
+        <th class="mm"><a href="{% url 'index' %}">Logout</a></th>
+    </tr>
+
+</table>
